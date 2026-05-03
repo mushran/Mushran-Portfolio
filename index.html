@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mushran Siddiqui Portfolio</title>
+
+  <!-- Correct paths -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Typed.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Star background layers -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <i class="fas fa-leaf nav-icon"></i>
+      <a href="#home" class="nav-logo">Mushran Siddiqui</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-right" id="navMenu">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#credentials">CREDENTIALS</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#publications">PUBLICATIONS</a></li>
+      <li><a href="#certificates">CERTIFICATES</a></li>
+      <li><a href="#moments">HOBBIES</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-container">
+
+      <!-- Left: Image -->
+      <div class="home-left">
+        <img src="images/photo.jpeg" alt="Mushran Siddiqui">
+      </div>
+
+      <!-- Home Section -->
+      <div class="home-right">
+        <h1>Hi, I'm Mushran Siddiqui</h1>
+        <p>
+            <span class="typed-text"></span>
+        </p>
+        <div class="button-group">
+          <a href="files/Mushran Siddiqui Resume.pdf" target="_blank" class="resume-button">
+            <i class="fas fa-file-pdf" style="margin-right: 10px; vertical-align: middle;"></i>
+            View Resume
+          </a>
+          <a href="#about" class="resume-button learn-more">
+            <i class="fas fa-info-circle" style="margin-right: 10px; vertical-align: middle;"></i>
+            Learn More
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2 class="section-heading">ABOUT ME</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          Hi, I’m Mushran (Moosh-run – think “moosh,” then run 🏃). I enjoy connecting ideas with real-world impact. 
+          My background blends environmental economics, engineering, and management, and I’ve always been curious about how data can shape better decisions.
+        </p>
+        
+        <p>
+          During my Master’s, I worked on projects that turned analysis into outcomes, including mapping the carbon footprint of a local community-based business in Kamloops and contributing to research focused on improving employment outcomes for First Nations, Métis, and Inuit communities. Much of my work has been grounded in sustainability and community-oriented problem solving.
+          Today, as a Training Coordinator in the construction industry, I see a different side of the work where plans and requirements have to be translated into clear, practical systems that crews can actually follow on site.
+
+        </p>
+
+        <p>
+          I’m especially interested in bridging that gap between analysis and application, taking complex sustainability challenges and turning them into something simple, useful, and real.
+          Outside of work, I’m just as curious. You’ll find a bit of that in the Hobbies section, where I share the small things that keep me grounded and inspired.
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="images/photo-3.jpg" alt="Your Name">
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials Section -->
+  <section id="credentials" class="credentials-section">
+    <h2 class="section-heading">CREDENTIALS</h2>
+
+    <!-- Filter Buttons (same styling as Projects) -->
+    <div class="filter-container" id="credentialsFilters">
+      <button class="filter-btn active" data-cred="all">All</button>
+      <button class="filter-btn" data-cred="professional">Professional Experience</button>
+      <button class="filter-btn" data-cred="education">Education</button>
+    </div>
+
+    <div class="credentials-container">
+
+      <!-- Credential 1-->
+      <div class="credential-box" data-category="professional">
+        <div class="credential-header">
+          <img src="images/bat.png" alt="BAT Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>Training Coordinator</h3>
+            <p class="credential-place">2026-Present, BAT Construction, Kamloops, BC</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>I recently joined BAT Construction as a Training Coordinator, supporting Human Resources, Learning and
+            Development, Safety Compliance, and Operations. In this role, I coordinate in-person and virtual training
+            programs focused on safety, compliance, and skills development to ensure workforce readiness across
+            projects. I manage employee training records, track certifications and memberships, and evaluate
+            program effectiveness to maintain alignment with company policies and legal requirements. I collaborate
+            closely with managers to identify training needs, support onboarding initiatives, and improve participation
+            and completion rates. I also serve as the primary contact for technology assets and training platforms,
+            ensuring accurate tracking and documentation. Through structured coordination and attention to detail,
+            I contribute to operational efficiency, safety performance, and project success across the organization.
+          </p>
+        </div>
+      </div>
+
+      <!-- Credential 2 -->
+      <div class="credential-box" data-category="education">
+        <div class="credential-header">
+          <img src="images/TRU.png" alt="TRU Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>Masters of Science (MSc) in Environmental Economics & Management (MEEM)</h3>
+            <p class="credential-place">2023 - 2024, Thompson Rivers University, Kamloops, BC</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>This degree shaped my understanding of how economic systems, environmental policy, and sustainability practices interact in the real world. 
+            Through graduate coursework, applied projects, and research, I learned to analyze climate and energy trends, evaluate public policies, conduct cost-benefit and valuation studies, and interpret complex economic data. I gained experience using tools such as Excel, R, and environmental modelling frameworks like the Kaya Identity to examine emissions trajectories, ecosystem values, and community development patterns.
+            My academic work included carbon forecasting, ecosystem valuation, SDG assessments, and community housing analysis, which strengthened my skills in quantitative evaluation, policy interpretation, and evidence-based decision-making. 
+            This program gave me a strong foundation in environmental economics, sustainability strategy, and data-driven analysis that continues to guide my work today.
+          </p>
+        </div>
+      </div>
+
+      <!-- Credential 3-->
+      <div class="credential-box" data-category="professional">
+        <div class="credential-header">
+          <img src="images/TRU.png" alt="TRU Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>TELUS Sustainability Research Fellow, Community Carbon Accounting Program</h3>
+            <p class="credential-place">2023 - 2024, Thompson Rivers University, Kamloops, BC</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>As a TELUS Sustainability Research Fellow, I completed a full-cycle greenhouse gas (GHG) inventory for a local business using ISO 14064 and the GHG Protocol. 
+            I analyzed energy use, modelled emissions, and developed both heating and operational scenarios using empirical data, regression-based methods, and Monte Carlo simulations. 
+            Through this work, I identified major emission sources, quantified reduction pathways, and assessed the financial and environmental feasibility of transitioning to electric heating.
+
+            I evaluated heat pump scenarios, lifecycle costs, and rebate frameworks, demonstrating that the business could significantly reduce emissions and achieve long-term savings. 
+            I also explored Scope 3 opportunities such as employee commute strategies and carbon-labelled menus.
+
+            This fellowship strengthened my ability to combine data analysis, sustainability strategy, and economic evaluation into clear, actionable recommendations. 
+            It also gave me the opportunity to present findings to academic and industry partners, helping bridge technical research with practical, real-world climate solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Credential 4-->
+      <div class="credential-box" data-category="professional">
+        <div class="credential-header">
+          <img src="images/UIU.png" alt="UIU Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>Sustainability Systems Analyst (Remote: Canada-based)</h3>
+            <p class="credential-place">2020 – 2024, United International University (UIU), Dhaka, Bangladesh</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>I have been contributing to this research program since 2020, and since moving to Canada in 2022, I continued supporting the team remotely. 
+            In this role, I worked on projects that brought together sustainability, engineering, and data-driven problem-solving. 
+            I helped design and evaluated IoT-based agricultural systems, wireless sensor network (WSN) algorithms, and nutrition optimization tools that aimed to improve efficiency and support real-world decision-making.
+
+            My work included developing sensor-driven irrigation models, testing clustering algorithms, and contributing to optimization frameworks shaped around regional diets, health conditions, and affordability. 
+            I also coordinated research planning, documentation, timelines, and communication across teams to ensure consistent, high-quality outputs. This experience strengthened my technical abilities, my project coordination skills, and my understanding of how technology and sustainability intersect in practical applications.
+          </p>
+        </div>
+      </div>
+
+      <!-- Credential 5-->
+      <div class="credential-box" data-category="professional">
+        <div class="credential-header">
+          <img src="images/TRU.png" alt="TRU Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>Graduate Research Assistant</h3>
+            <p class="credential-place">2023 - 2024, Thompson Rivers University, Kamloops, BC</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>As a Graduate Research Assistant, I contributed to projects focused on sustainability, economic development, and Indigenous employment in Canada. 
+            I worked with large datasets, conducted econometric and statistical analysis, and supported academic writing, presentations, and literature reviews. 
+            This role strengthened my ability to interpret complex data, draw evidence-based insights, and communicate research clearly.
+            I had the opportunity to explore topics such as AI and sustainable development, wage disparities, and labour market outcomes for First Nations, Inuit, and Métis communities. 
+            The experience deepened my understanding of policy challenges and helped me develop strong analytical, research, and documentation skills that continue to guide my work today.
+          </p>
+        </div>
+      </div>
+
+      <!-- Credential 6-->
+      <div class="credential-box" data-category="professional">
+        <div class="credential-header">
+          <img src="images/TRU.png" alt="TRU Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>Graduate Teaching Assistant</h3>
+            <p class="credential-place">2023 - 2024, Thompson Rivers University, Kamloops, BC</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>As a Graduate Teaching Assistant, I supported undergraduate students in Microeconomics and Macroeconomics by explaining concepts, guiding assignments, and helping them prepare for exams. 
+            I held office hours, designed practice problems, and led review sessions that made the material more approachable for students with different learning backgrounds.
+            This role strengthened my ability to communicate complex ideas clearly, work with diverse groups of learners, and support students in building confidence in their coursework. 
+            It was a meaningful part of my graduate experience and helped me grow both academically and personally
+          </p>
+        </div>
+      </div>
+
+      <!-- Credential 7-->
+      <div class="credential-box" data-category="education">
+        <div class="credential-header">
+          <img src="images/TRU.png" alt="TRU Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>Graduate Diploma Business Administration (GDBA)</h3>
+            <p class="credential-place">2022 - 2023, Thompson Rivers University, Kamloops, BC</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>This program strengthened my understanding of how organizations operate and make decisions. 
+            Through coursework in accounting, economics, marketing, human resources, and management, I developed practical skills in financial analysis, data interpretation, strategic planning, and organizational communication. I learned how business frameworks support sustainability efforts, policy evaluation, and evidence-based decision-making in real-world settings.
+            The GDBA complemented my environmental economics studies by giving me a broader perspective on how businesses balance financial performance with social and environmental responsibilities. 
+            It helped me build a more integrated approach to analysis, research, and management.
+          </p>
+        </div>
+      </div>
+
+      <!-- Credential 8-->
+      <div class="credential-box" data-category="education">
+        <div class="credential-header">
+          <img src="images/UIU.png" alt="UIU Logo" class="credential-img">
+          <div class="credential-info">
+            <h3>Bachelor of Science (BSc) in Electrical & Electronic Engineering (EEE) </h3>
+            <p class="credential-place">2013 - 2017, United International University (UIU), Dhaka, Bangladesh</p>
+          </div>
+        </div>
+        <div class="credential-description">
+          <p>My undergraduate degree gave me a strong technical foundation in electronics, circuits, communication systems, and applied engineering problem-solving. 
+            I learned to work with sensor networks, embedded systems, and automation concepts, which later supported my research in IoT-based agriculture and wireless sensor networks (WSN). 
+            The program strengthened my analytical thinking, mathematical skills, and ability to approach complex technical challenges with structured reasoning.
+            This background continues to influence my work in sustainability and environmental research, especially in areas that connect engineering with data, optimization, and practical applications. 
+            It remains an important part of how I understand technology, systems, and real-world solutions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+        <h2 class="section-title">SKILLS</h2>
+
+        <!-- Sustainability & Climate Action -->
+        <div class="skills-category">
+            <h3>Sustainability & Climate Action</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2303/2303770.png" alt="GHG Logo">
+                    </div>
+                    <p>GHG Accounting (ISO 14064, GHG Protocol)</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/15822/15822596.png" alt="Carbon Logo">
+                    </div>
+                    <p>Carbon Footprint & Lifecycle Assessment</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4515/4515708.png" alt="Energy Logo">
+                    </div>
+                    <p>Energy Transition & Policy Evaluation</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/11525/11525856.png" alt="Climate Logo">
+                    </div>
+                    <p>Climate Action Planning & Sustainability Reporting</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Research & Analysis -->
+        <div class="skills-category">
+            <h3>Research & Analysis</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149664.png" alt="Econometric Logo">
+                    </div>
+                    <p>Econometric & Statistical Modeling</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/12238/12238016.png" alt="Cost-Benefit Logo">
+                    </div>
+                    <p>Cost-Benefit & Valuation Methods</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5070/5070732.png" alt="Monte Carlo Logo">
+                    </div>
+                    <p>Monte Carlo Simulation & Forecasting</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/18384/18384751.png" alt="Academic Logo">
+                    </div>
+                    <p>Academic & Business Research</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project & Coordination Skills -->
+        <div class="skills-category">
+            <h3>Project & Coordination Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/8523/8523690.png" alt="Policy Logo">
+                    </div>
+                    <p>Policy, Program & Project Development</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1239/1239719.png" alt="Stakeholder Logo">
+                    </div>
+                    <p>Stakeholder Engagement & Communication</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9746/9746243.png" alt="Documentation Logo">
+                    </div>
+                    <p>Documentation & Technical Reporting</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Tools-->
+        <div class="skills-category">
+            <h3>Technical Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/8361/8361442.png" alt="Excel Logo">
+                    </div>
+                    <p>Excel</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2103/2103665.png" alt="R Logo">
+                    </div>
+                    <p>R</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2620/2620297.png" alt="Power BI Logo">
+                    </div>
+                    <p>Power BI</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Logo">
+                    </div>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/14106/14106108.png" alt="MatLab Logo">
+                    </div>
+                    <p>MatLab</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/18220/18220193.png" alt="CupCarbon Logo">
+                    </div>
+                    <p>CupCarbon</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network & Data -->
+        <div class="skills-category">
+            <h3>Network & Data</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6092/6092745.png" alt="Networks Logo">
+                    </div>
+                    <p>IoT & Wireless Sensor Networks (WSN)</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/8131/8131867.png" alt="AI Logo">
+                    </div>
+                    <p>Generative AI Applications</p>
+                </div>
+                <div class="skill-item">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2318/2318736.png" alt="Data Visualization Logo">
+                    </div>
+                    <p>Data Visualization & Decision Support</p>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+        <h2>PROJECTS</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="sus-en">Sustainability</button>
+            <button class="filter-btn" data-category="com-dev">Community Development</button>
+            <button class="filter-btn" data-category="en">Energy</button>
+            <button class="filter-btn" data-category="pol">Economic Policy</button>
+        </div>
+        <div class="projects-container">         
+
+            <!-- Project 1: Pathway Towards Sustainable Energy Transition -->
+            <div class="project-card" data-category="sus-en">
+                <h3>A Pathway Towards Sustainable Energy Transition</h3>
+                <img src="images/sus-en.png" alt="Sustainable Energy Transition Image" class="project-image">
+                <p>
+                    Using the Kaya Identity and datasets from IEA and Our World in Data, the study projected that a BAU pathway could exceed Paris Agreement limits by 2030. It assessed renewable energy cost reductions, sectoral emission contributors, and policy challenges, and recommended targeted actions including carbon pricing and clean-energy incentives.
+                </p>
+                <div class="project-links">
+                    <a href="files/Pathway Towards Sustainable Energy Transition.pdf" target="_blank" class="btn">
+                        <i class="fas fa-file-pdf"></i> View
+                    </a>
+                </div>
+                <div class="skills-used">
+                    <strong>Skills Used:</strong>
+                    <span class="skill-list">
+                        Kaya Identity, 
+                        Literature Review (IEA), 
+                        Excel-based Graphing,
+                        Our World in Data
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Project 2: Sustainable Community Development -->
+            <div class="project-card" data-category="com-dev">
+                <h3>Sustainable Community Economic Development</h3>
+                <img src="images/com-dev.jpg" alt="Sustainable Community Economic Development Image" class="project-image">
+                <p>
+                    Used census data (2011–2021) to assess trends in affordability, income distribution, and demographics. Found a 20.6% rise in affordable housing access and a 10.1% increase in household income, but identified a sharp rise in homelessness as a critical policy concern.
+                </p>
+                <div class="project-links">
+                    <a href="files/Sustainable Community Development Project.pdf" target="_blank" class="btn">
+                        <i class="fas fa-file-pdf"></i> View
+                    </a>
+                </div>
+                <div class="skills-used">
+                    <strong>Skills Used:</strong>
+                    <span class="skill-list">
+                        Excel, 
+                        Statistics Canada Census Data,
+                        Cost of Living Index,
+                        Gini Coefficient Analysis, 
+                        LIM-AT Poverty Metrics
+                    </span>
+                </div>
+            </div>
+    
+            <!-- Project 3: Energy Efficiency Programs -->
+            <div class="project-card" data-category="en pol">
+                <h3>Canadian Provincial Energy Efficiency Programs</h3>
+                <img src="images/en.jpg" alt="Energy Efficiency Programs Image" class="project-image">
+                <p>
+                    Analyzed interprovincial energy programs and used Kaya Identity to project Canada’s 2030 CO₂ emissions at 575.44 Mt under BAU, far above the Paris target of 288.10 Mt. Found RD&D investments improve efficiency, but unequal provincial funding threatens national climate goals.
+                </p>
+                <div class="project-links">
+                    <a href="files/Energy Efficiency Programs.pdf" target="_blank" class="btn">
+                        <i class="fas fa-file-pdf"></i> View
+                    </a>
+                </div>
+                <div class="skills-used">
+                    <strong>Skills Used:</strong>
+                    <span class="skill-list">
+                        Excel (trend analysis), 
+                        Kaya Identity, 
+                        Natural Resources Canada reports, 
+                        Efficiency Canada databases, 
+                        Policy Mapping
+                    </span>
+                </div>
+            </div>
+
+            <!-- Project 4: Kaya Identity Climate Assessment – USA -->
+            <div class="project-card" data-category="sus-en">
+                <h3>Kaya Identity Climate Assessment – USA</h3>
+                <img src="images/kaya-us.png" alt="Kaya Identity Climate Assessment Image" class="project-image">
+                <p>
+                    Used Kaya Identity to model long-term CO₂ emissions in the U.S. from 1990 to 2030. Applied Excel to analyze and visualize trends in GDP per capita, energy intensity, and carbon intensity. Identified a projected 27.72% emissions reduction by 2030, falling short of Paris Agreement goals, emphasizing the need for stronger mitigation policies.
+
+                      Conducted a 30-year quantitative analysis (1990–2020) of U.S. carbon emissions using the Kaya Identity framework, incorporating data from the World Bank and Our World in Data.
+                      Developed CO₂ emission forecasts through 2030 based on empirically computed annual growth rates of population, GDP per capita, carbon intensity, and energy intensity.
+                      Identified a projected 27.72% reduction in emissions by 2030 under business-as-usual trends, falling 30.83% short of the Paris Agreement target, highlighting gaps in national mitigation policy.
+
+                </p>
+                <div class="skills-used">
+                    <strong>Skills Used:</strong>
+                    <span class="skill-list">
+                        Excel, 
+                        R, 
+                        Climate Economics Literature, 
+                        Policy Analysis
+                    </span>
+                </div>
+            </div>
+
+            <!-- Project 5: The Global Value of Natural Resources -->
+            <div class="project-card" data-category="web">
+                <h3>The Global Value of Natural Resources</h3>
+                <img src="images/global-val.jpg" alt="The Global Value of Natural Resources Image" class="project-image">
+                <p>
+                    Analyzed 785 ecosystem valuation records using the ESVD database to assess global economic value of coastal wetlands. Found a 78.7% decrease in global wetland area since 1994 and highlighted urgent policy needs for ecosystem service preservation.
+                </p>
+                <div class="project-links">
+                    <a href="files/Global Value of Natural Resources.pdf" target="_blank" class="btn">
+                        <i class="fas fa-file-pdf"></i> View
+                    </a>
+                </div>
+                <div class="skills-used">
+                    <strong>Skills Used:</strong>
+                    <span class="skill-list">
+                        Ecosystem Valuation,
+                        Quantitative Data Analysis,
+                        Environmental Economics,
+                        Geospatial Interpretation,
+                        Literature Synthesis,
+                        Research Methodology Design,
+                        Climate & Ecological Assessment
+                    </span>
+                </div>
+            </div>   
+    
+            <!-- Project 6: UN SDG Policy & Development Assessment -->
+            <div class="project-card" data-category="sus-en pol">
+                <h3>UN SDG Policy & Development Assessment</h3>
+                <img src="images/sdg.png" alt="UN SDG Policy & Development Assessment Image" class="project-image">
+                <p>
+                    Mapped Germany’s performance across all 17 UN SDGs using Excel and OECD indicators. Compared progress with other OECD countries using standardized goal-distance metrics and identified key underperforming areas.
+                </p>
+                <div class="skills-used">
+                    <strong>Skills Used:</strong>
+                    <span class="skill-list">
+                      Excel, 
+                      OECD SDG Data, 
+                      Policy Analysis
+                    </span>
+                </div>
+            </div>
+    
+        </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="publications-section">
+    <h2>PUBLICATIONS</h2>
+    <div class="publications-container">
+      
+      <!-- Publication 1 -->
+      <div class="publication-card">
+        <img src="images/pub1.png" alt="Publication 1 Image" class="publication-image">
+        <h3>The Role of Work Experience Programmes in Shaping Employment Outcomes for Indigenous Peoples in Canada</h3>
+        <p>
+          In my recent research, I contributed to a study examining employment outcomes of First Nations, Métis, and Inuit communities in Canada using an expanded human capital framework. 
+          The study found that participation in work experience programmes increases the likelihood of employment by 12%, alongside the positive effects of education and health. 
+          The findings highlight the importance of experiential learning in shaping more effective and inclusive workforce development strategies.
+        </p>
+        <a href="https://onlinelibrary.wiley.com/doi/10.1111/1759-3441.70005" target="_blank" class="btn publication-btn">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+      </div>
+
+      <!-- Publication 2 -->
+      <div class="publication-card">
+        <img src="images/pub2.jpg" alt="Publication 2 Image" class="publication-image">
+        <h3>A Regionally Adaptable Nutrition-Centric Food Recommendation System (FR-RANC)</h3>
+        <p>
+          The FR-RANC system provides personalized dietary recommendations by integrating user data (age, health, socioeconomic status) with region-specific food databases. 
+          Unlike traditional tools that focus narrowly on a few nutrients, FR-RANC adapts to local food availability, economic conditions, and comprehensive nutrient needs. 
+          Tests showed ~90% compliance with macronutrient targets and strong alignment with micronutrient requirements across varied health conditions. 
+          The system also overcomes cold-start and scalability issues, making it a practical tool to promote balanced nutrition and reduce global dietary disparities.
+        </p>
+        <a href="https://doi.org/10.1109/ACCESS.2025.3592210" target="_blank" class="btn publication-btn">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+      </div>
+
+      <!-- Publication 3 -->
+      <div class="publication-card">
+        <img src="images/pub3.jpg" alt="Publication 3 Image" class="publication-image">
+        <h3>MHM-RTC: Multi-hop Mobility-based Real-Time Clustering Algorithm for Wide-area Wireless Sensor Network</h3>
+        <p>
+          The MHM-RTC algorithm enhances IoT-based wireless sensor networks by enabling real-time, mobility-aware clustering through LoRa communication between sensor nodes and a mobile data sink. 
+          Unlike traditional methods, it adapts dynamically to topology changes, optimizing energy use and coverage in large-scale mobile environments. 
+          Simulations showed up to 20% faster clustering, 37–53% greater node coverage, and 3.8–8.7% lower energy use compared to existing algorithms, making it a practical solution for efficient, wide-area WSN deployment.
+        </p>
+        <a href="https://doi.org/10.1109/ACCESS.2025.3603021" target="_blank" class="btn publication-btn">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+      </div>
+
+      <!-- Publication 4 -->
+      <div class="publication-card">
+        <img src="images/pub4.png" alt="Publication 4 Image" class="publication-image">
+        <h3>Dimensioning of Wide-Area AWD System for IoT-Based Automation</h3>
+        <p>
+          This research introduces an automated Alternate Wetting and Drying (AWD) irrigation system for large-scale rice farming using IoT-enabled wireless sensor networks. 
+          It integrates monitoring, control, and irrigation networks with real-time data such as weather forecasts and plant conditions to optimize water use. 
+          Simulations and field trials demonstrated scalability to 25,000 acres, reducing water loss through plastic piping, coordinating 250 pumps across 10 clusters, and ensuring efficient, low-cost irrigation in areas lacking cellular coverage.
+        </p>
+        <a href="https://doi.org/10.3390/s21186040" target="_blank" class="btn publication-btn">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certifications-section">
+    <h2 class="section-heading">CERTIFICATIONS & AWARDS</h2>
+    <div class="certifications-container">
+
+      <!-- CBC Interview Feature -->
+      <div class="cert-card highlight">
+        <i class="fas fa-microphone-alt cert-icon"></i>
+        <h3>Featured CBC Interview</h3>
+        <p>
+          Interviewed by CBC/Radio-Canada for a master's project on carbon footprint management as a TELUS Sustainability Research Fellow.
+          Recognized by the Bob Gaglardi School of Business and Economics (2025).
+        </p>
+        <a href="https://www.cbc.ca/listen/live-radio/1-108-daybreak-kamloops/clip/16129431-brewing-greener-future-kamloops-cafe-partners-tru-cut" target="_blank" class="cert-btn">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+      </div>
+
+      <!-- TRU Medal Recipient -->
+      <div class="cert-card">
+        <i class="fas fa-award cert-icon"></i>
+        <h3>TRU Medal Recipient</h3>
+        <p>Top graduate in MSc Environmental Economics & Management (2025).</p>
+        <a href="https://www.linkedin.com/posts/katemorford_weve-officially-kicked-off-conovcation-week-activity-7335374514303709185-vZ4O?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGIZjoBwMttc1C6F4jodgWc0x4vzQvrXpY" target="_blank" class="cert-btn">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+      </div>
+
+      <!-- Conference Presentation -->
+      <div class="cert-card">
+        <i class="fas fa-chalkboard-teacher cert-icon"></i>
+        <h3>Conference Presentation</h3>
+        <p>
+          Presented research on employment barriers among First Nations, Inuit, and Métis communities at the 
+          <strong>4th Annual Environment & Sustainability Research Spring Workshop</strong>, 
+          Thompson Rivers University, May 2025.
+        </p>
+        <a href="https://events.humanitix.com/4th-annual-environment-and-sustainability-research-spring-workshop" target="_blank" class="cert-btn">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+      </div>
+
+      <!-- Certificates -->
+      <div class="cert-card">
+        <i class="fas fa-certificate cert-icon"></i>
+        <h3>Tri-Council Policy Statement (TCPS2): Core Certified</h3>
+        <p>National research ethics certification, Canada, 2024.</p>
+      </div>
+
+      <!-- Award -->
+      <div class="cert-card">
+        <i class="fas fa-award cert-icon"></i>
+        <h3>People's Choice Award</h3>
+        <p>First Place in Environmental & Natural Resource Economics Poster at the Financial Reporting and ESG Workshop, TRU (May 2024).</p>
+        <a href="https://financialreportingesg.trubox.ca/" target="_blank" class="cert-btn">
+          <i class="fas fa-award"></i> View
+        </a>
+      </div>
+
+      <!-- Academic Honor -->
+      <div class="cert-card">
+        <i class="fas fa-graduation-cap cert-icon"></i>
+        <h3>BSc. Magna Cum Laude</h3>
+        <p>Graduated with honors, recognized for academic excellence and contribution to research.</p>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="cert-card">
+        <i class="fas fa-hands-helping cert-icon"></i>
+        <h3>Volunteer – Unearned Assets Conference</h3>
+        <p>
+          Thompson Rivers University, May 29–30, 2024. Assisted in a 2-day event on privilege, anti-racism, and equity featuring keynote speakers Dr. Peggy McIntosh and Jesse Lipscombe.
+        </p>
+        <a href="https://inside.tru.ca/events/event/unearned-assets-conference/" target="_blank" class="cert-btn">
+          <i class="fas fa-award"></i> View
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Hobbies/Moments Section -->
+  <section id="moments" class="moments-unique">
+    <div class="moments-header">
+      <h2>Hobbies</h2>
+    </div>
+
+    <div class="polaroid-grid">
+      <!-- Books Card -->
+      <figure class="polaroid"
+              data-caption="There’s something comforting about getting lost in a good story.
+                            I don’t always have the time to read as much as I’d like, but I still find myself buying books, saving them for quiet moments. 
+                            I gravitate toward fantasy worlds and detective mysteries; the kinds of stories that let you slip away for a while. 
+                            Whenever I can, I open a new page and let it take me somewhere else."
+              data-gallery="images/book1.jpg, images/book2.jpg">
+        <img src="images/books-cov.jpeg"
+            alt="Books Cover">
+        <figcaption>Books</figcaption>
+      </figure>
+
+
+      <!-- Cats Card -->
+      <figure class="polaroid rotate-l"
+              data-caption="I’ve always had a soft spot for cats. Back home, I used to take in stray kittens, feed them, care for them, and help them find safe homes. Each one had a little personality of its own, and being part of their journey meant more to me than I can explain.
+                            They taught me patience, gentleness, and quiet responsibility. 
+                            I still miss the soft purring and the small moments that made everyday life feel lighter."
+              data-gallery="images/cats1.jpg, images/cats2.jpg">
+        <img src="images/cats-main.JPG"
+            alt="Cats">
+        <figcaption>Cats</figcaption>
+      </figure>
+
+      <!-- Hiking Card -->
+      <figure class="polaroid rotate-r"
+              data-caption="Living in British Columbia has made me appreciate being outdoors even more. 
+                            The mountains, forests, and trails here are incredible, and hiking has become one of the ways I slow down and reconnect with myself. 
+                            I’m not a hardcore hiker, but I enjoy exploring new paths whenever I can and taking in the quiet beauty of this place.
+                            There is something peaceful about BC’s landscapes that I’ve grown to love."
+              data-gallery="images/hiking1.jpg, images/hiking2.jpeg">
+        <img src="images/hiking-main.JPG"
+            alt="Hiking moment">
+        <figcaption>Hiking Moments</figcaption>
+      </figure>
+
+      <!-- Lego Moment Card -->
+      <figure class="polaroid rotate-r"
+              data-caption="I’ve always enjoyed building LEGO sets, especially anything from Star Wars. 
+                            It’s a small hobby that helps me unwind piece by piece, moment by moment. 
+                            I don’t collect a lot, just the ones that make me smile or remind me of stories I love. 
+                            It’s a quiet little escape that brings out the kid in me in the best way."
+              data-gallery="images/lego1.jpg, images/lego2.jpg">
+        <img src="images/lego-main.jpeg"
+            alt="Lego collection">
+        <figcaption>Lego</figcaption>
+      </figure>
+
+
+      <!-- Movies & Series Moment Card -->
+      <figure class="polaroid rotate-l"
+              data-caption="I’ve always loved stories on screen, especially worlds like The Lord of the Rings and Star Wars. I’ve watched every Star Wars movie and series, including The Clone Wars, and those universes never get old for me.
+                            For something lighter, I enjoy shows like The Big Bang Theory, The Office, Supernatural, and Brooklyn Nine-Nine, though I’m sure I’m forgetting many others. I often return to movies and series I’ve already seen countless times. There’s a quiet comfort in revisiting stories that feel familiar.
+                            I’m also really drawn to documentaries about space and the universe. The work of Brian Cox has always captivated me, and I enjoy tuning in to Neil deGrasse Tyson and Chuck Nice on StarTalk Cosmic Queries.
+                            And whenever I can, I still love watching films in theatres. There’s something special about that shared experience."
+              data-gallery="images/lotr.jpg, images/office.jpg">
+        <img src="images/movie-main.jpg"
+            alt="Movies & Series">
+        <figcaption>Movies & Series</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="moment-lightbox" id="momentLightbox" aria-hidden="true">
+      <button class="close" aria-label="Close">&times;</button>
+      <div class="lightbox-gallery"></div>
+      <p class="lightbox-cap"></p>
+    </div>
+
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+      <h2>CONTACT</h2>
+      <div class="contact-container">
+          <!-- LinkedIn Box -->
+          <a href="https://www.linkedin.com/in/mushran-siddiqui/" target="_blank" class="contact-box">
+              <i class='fab fa-linkedin-in contact-icon' style='font-size:48px;color:blue' alt="LinkedIn"></i>
+              <p class="contact-text">Mushran Siddiqui</p>
+          </a>
+
+          <!-- Email Box -->
+          <a href="mailto:faiyazwork24@gmail.com" class="contact-box">
+              <i class='fas fa-envelope contact-icon' style='font-size:48px;color:white' alt="Email"></i>
+              <p class="contact-text">mushran@live.com</p>
+          </a>
+
+          <!-- Location Box -->
+            <div class="contact-box">
+              <i class='fas fa-map-marker-alt contact-icon' style='font-size:48px;color:red' alt="Location"></i>
+              <p class="contact-text">Based in BC, Canada</p>
+            </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      © 2026 Mushran Siddqui | All Rights Reserved
+  </footer>
+
+  <script>
+      // Typewriter Effect
+      var typed = new Typed(".typed-text", {
+          strings: [
+              "Sustainability Analyst",
+              "Environmental Researcher",
+              "Project Coordinator",
+              "Economist",
+              "Electrical Engineer",
+              "Data Modelling Specialist"
+          ],
+          typeSpeed: 40,
+          backSpeed: 25,
+          loop: true
+      });
+  </script>
+  
+  <script>
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-right li a");
+
+    function updateActiveLink() {
+      let index = sections.length;
+
+      while (--index >= 0 && window.scrollY + 120 < sections[index].offsetTop) {}
+
+      navLinks.forEach((link) => link.classList.remove("active"));
+      if (index >= 0) {
+        const activeSection = sections[index].id;
+        const activeLink = document.querySelector(`.nav-right li a[href="#${activeSection}"]`);
+        if (activeLink) {
+          activeLink.classList.add("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", updateActiveLink);
+    window.addEventListener("load", updateActiveLink);
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      // -------------------------
+      // Projects filters (scoped)
+      // -------------------------
+      const projectFilterButtons = document.querySelectorAll("#projects .filter-btn");
+      const projectCards = document.querySelectorAll("#projects .project-card");
+
+      projectFilterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          projectFilterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const category = btn.dataset.category;
+
+          projectCards.forEach((card) => {
+            const categories = card.dataset.category.split(" ");
+            card.style.display = (category === "all" || categories.includes(category)) ? "block" : "none";
+          });
+        });
+      });
+
+      // --------------------------------
+      // Credentials filters (new, scoped)
+      // --------------------------------
+      const credFilterButtons = document.querySelectorAll("#credentials .filter-container .filter-btn");
+      const credCards = document.querySelectorAll("#credentials .credential-box");
+
+      // Always default to "All" on load
+      credFilterButtons.forEach((b) => b.classList.remove("active"));
+      const defaultBtn = document.querySelector('#credentials .filter-btn[data-cred="all"]');
+      if (defaultBtn) defaultBtn.classList.add("active");
+
+      credCards.forEach((card) => {
+        card.style.display = "flex"; // credential-box uses flex layout
+      });
+
+      credFilterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          credFilterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.dataset.cred;
+
+          credCards.forEach((card) => {
+            const cat = card.dataset.category; // "education" or "professional"
+            card.style.display = (filter === "all" || cat === filter) ? "flex" : "none";
+          });
+        });
+      });
+
+    });
+  </script>
+
+
+  <script>
+    document.querySelectorAll('.credential-box').forEach(box => {
+      const desc = box.querySelector('.credential-description');
+
+      box.addEventListener('mouseenter', () => {
+        // Close all other credential descriptions
+        document.querySelectorAll('.credential-description').forEach(d => {
+          d.style.maxHeight = "0";
+          d.style.opacity = "0";
+        });
+
+        // Open only this hovered one
+        desc.style.maxHeight = desc.scrollHeight + "px";
+        desc.style.opacity = "1";
+      });
+
+      box.addEventListener('mouseleave', () => {
+        // Close this one as well when mouse leaves
+        desc.style.maxHeight = "0";
+        desc.style.opacity = "0";
+      });
+    });
+  </script>
+
+
+  <script>
+    // Lightbox with gallery
+    (function () {
+      const grid = document.querySelector('.polaroid-grid');
+      const lb   = document.getElementById('momentLightbox');
+      const cap  = lb.querySelector('.lightbox-cap');
+      const btn  = lb.querySelector('.close');
+      const gallery = lb.querySelector('.lightbox-gallery');
+
+      if (!grid || !lb) return;
+
+      grid.addEventListener('click', e => {
+        const fig = e.target.closest('.polaroid');
+        if (!fig) return;
+
+        // Clear previous gallery
+        gallery.innerHTML = "";
+
+        // Get gallery images from data attribute
+        const imgs = fig.dataset.gallery ? fig.dataset.gallery.split(",") : [];
+        imgs.forEach(src => {
+          const imgEl = document.createElement("img");
+          imgEl.src = src.trim();
+          gallery.appendChild(imgEl);
+        });
+
+        cap.textContent = fig.dataset.caption || fig.querySelector('figcaption')?.textContent || '';
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      });
+
+      function closeLB() {
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        gallery.innerHTML = "";
+        cap.textContent = "";
+      }
+      btn.addEventListener('click', closeLB);
+      lb.addEventListener('click', (e) => { if (e.target === lb) closeLB(); });
+      window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLB(); });
+    })();
+
+  </script>
+
+  <script>
+    const canvas = document.getElementById("starfield");
+    const ctx = canvas.getContext("2d");
+    let stars = [];
+    const numStars = 300; // adjust density
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      stars = [];
+      for (let i = 0; i < numStars; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.2,
+          s: Math.random() * 0.8 + 0.2, // speed
+          o: Math.random() * 0.5 + 0.5  // opacity
+        });
+      }
+    }
+    resize();
+    window.addEventListener("resize", resize);
+
+    function animate() {
+      ctx.fillStyle = "radial-gradient(ellipse at bottom, #111 0%, #000 100%)";
+      ctx.fillStyle = "black";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      for (let s of stars) {
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255,255,255,${s.o})`;
+        ctx.fill();
+        s.x -= s.s;
+        if (s.x < 0) {
+          s.x = canvas.width;
+          s.y = Math.random() * canvas.height;
+        }
+      }
+
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navBar   = document.querySelector(".navbar");
+      const navToggle = document.getElementById("navToggle");
+      const navMenu   = document.getElementById("navMenu");
+
+      if (!navToggle || !navBar || !navMenu) return;
+
+      // Toggle menu on hamburger click
+      navToggle.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+
+      // Close menu when a link is clicked (mobile)
+      navMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      });
+
+      // Optionally close on resize back to desktop
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 900) {
+          navBar.classList.remove("open");
+        }
+      });
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
